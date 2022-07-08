@@ -1,0 +1,10 @@
+(** @canonical Con4.Authors *)
+module Authors = Con4__Authors
+
+
+(** @canonical Con4.Interface *)
+module Interface = Con4__Interface
+
+
+(** @canonical Con4.State *)
+module State = Con4__State

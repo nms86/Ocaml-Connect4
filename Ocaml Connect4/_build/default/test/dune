@@ -1,0 +1,3 @@
+(executable
+ (name main)
+ (libraries Con4 ounit2))

@@ -1,0 +1,192 @@
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:0:the board of init is a list of 6 int lists, each with 7 zero's.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:0:the board of init is a list of 6 int lists, each with 7 zero's is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:0:the board of init is a list of 6 int lists, each with 7 zero's.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:2:the board of init then adding chip to col 7 is empty board except 1st element of 7th list is 1.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:2:the board of init then adding chip to col 7 is empty board except 1st element of 7th list is 1 is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:2:the board of init then adding chip to col 7 is empty board except 1st element of 7th list is 1.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:3:the board of init, add chip to col 7, add chip to col 1 is empty board except 1st element of 7th list is 1, 1st element of 1st list is 2.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:3:the board of init, add chip to col 7, add chip to col 1 is empty board except 1st element of 7th list is 1, 1st element of 1st list is 2 is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:3:the board of init, add chip to col 7, add chip to col 1 is empty board except 1st element of 7th list is 1, 1st element of 1st list is 2.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:5:the board of init, add chip 1 six times is empty board except 1st list is [1;2;1;2;1;2].
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:5:the board of init, add chip 1 six times is empty board except 1st list is [1;2;1;2;1;2] is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:5:the board of init, add chip 1 six times is empty board except 1st list is [1;2;1;2;1;2].
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:7:the board of init, add chip 0 raises Failure InvalidColumn.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:7:the board of init, add chip 0 raises Failure InvalidColumn is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:7:the board of init, add chip 0 raises Failure InvalidColumn.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:10:outcome of init then add chip at 1 is NoOutcome.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:10:outcome of init then add chip at 1 is NoOutcome is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:10:outcome of init then add chip at 1 is NoOutcome.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:11:Hor Win test: outcome of add_chip 1, 1, 2, 2, 3, 3, 4 
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  2  2  2  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  1  1  1  1  0  0  0  |is Win for Pl 1.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:11:Hor Win test: outcome of add_chip 1, 1, 2, 2, 3, 3, 4 
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  2  2  2  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  1  1  1  1  0  0  0  |is Win for Pl 1 is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:11:Hor Win test: outcome of add_chip 1, 1, 2, 2, 3, 3, 4 
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  2  2  2  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  1  1  1  1  0  0  0  |is Win for Pl 1.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:14:Vert Hor Win test Pl 2: outcome of add_chip 7, 1, 2, 1, 2, 1, 2, 1 
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  2  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  2  1  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  2  1  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  2  1  0  0  0  0  1  |is Win for Pl 1.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:14:Vert Hor Win test Pl 2: outcome of add_chip 7, 1, 2, 1, 2, 1, 2, 1 
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  2  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  2  1  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  2  1  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  2  1  0  0  0  0  1  |is Win for Pl 1 is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:14:Vert Hor Win test Pl 2: outcome of add_chip 7, 1, 2, 1, 2, 1, 2, 1 
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  2  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  2  1  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  2  1  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:       |  2  1  0  0  0  0  1  |is Win for Pl 1.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:15:Diag topright Win test: outcome of add_chip 1, 2, 2, 3, 3, 4, 3, 4, 4, 5, 4 
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  1  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  1  1  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  1  1  2  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  1  2  2  2  0  2  0  | is Win for Pl 1.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:15:Diag topright Win test: outcome of add_chip 1, 2, 2, 3, 3, 4, 3, 4, 4, 5, 4 
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  1  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  1  1  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  1  1  2  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  1  2  2  2  0  2  0  | is Win for Pl 1 is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:15:Diag topright Win test: outcome of add_chip 1, 2, 2, 3, 3, 4, 3, 4, 4, 5, 4 
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  1  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  1  1  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  1  1  2  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  1  2  2  2  0  2  0  | is Win for Pl 1.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:18:Diag botright Win test Pl 2: outcome of add_chip 1, 7, 6, 6, 5, 5, 4, 5, 4, 4, 3, 4 is 
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  2  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  2  2  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  1  2  2  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  1  1  0  1  1  1  2  | Win for Pl 1.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:18:Diag botright Win test Pl 2: outcome of add_chip 1, 7, 6, 6, 5, 5, 4, 5, 4, 4, 3, 4 is 
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  2  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  2  2  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  1  2  2  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  1  1  0  1  1  1  2  | Win for Pl 1 is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:18:Diag botright Win test Pl 2: outcome of add_chip 1, 7, 6, 6, 5, 5, 4, 5, 4, 4, 3, 4 is 
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  0  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  2  0  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  2  2  0  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  0  0  0  1  2  2  0  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:        |  1  1  0  1  1  1  2  | Win for Pl 1.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:19:outcome of filling board up with no 4 in rows is Tie
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:  |  2  1  2  1  2  1  2  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: _|  2  1  2  1  2  1  1  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: _|  2  1  2  1  2  1  2  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: _|  1  2  1  2  1  2  1  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: _|  1  2  1  2  1  2  2  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: _|  1  2  1  2  1  2  1  |.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:19:outcome of filling board up with no 4 in rows is Tie
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:  |  2  1  2  1  2  1  2  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: _|  2  1  2  1  2  1  1  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: _|  2  1  2  1  2  1  2  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: _|  1  2  1  2  1  2  1  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: _|  1  2  1  2  1  2  2  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: _|  1  2  1  2  1  2  1  | is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:19:outcome of filling board up with no 4 in rows is Tie
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I:  |  2  1  2  1  2  1  2  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: _|  2  1  2  1  2  1  1  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: _|  2  1  2  1  2  1  2  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: _|  1  2  1  2  1  2  1  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: _|  1  2  1  2  1  2  2  |
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: _|  1  2  1  2  1  2  1  |.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:22:the board of init, add chip to col 1 six times, then add ANVIL chip to col 1 raises Failure ColumnFull.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:22:the board of init, add chip to col 1 six times, then add ANVIL chip to col 1 raises Failure ColumnFull is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:22:the board of init, add chip to col 1 six times, then add ANVIL chip to col 1 raises Failure ColumnFull.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:23:the board of init, add ANVIl chip to col 1 is empty board except 1st element of 1st list is 1.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:23:the board of init, add ANVIl chip to col 1 is empty board except 1st element of 1st list is 1 is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:23:the board of init, add ANVIl chip to col 1 is empty board except 1st element of 1st list is 1.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:26:empty board has no win moves.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:26:empty board has no win moves is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:26:empty board has no win moves.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:28:board with one piece has no win moves.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:28:board with one piece has no win moves is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:28:board with one piece has no win moves.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:30:board with columns [1; 1; 1; 0; 0; 0] and [2; 2; 2; 0; 0; 0] has win move in column 4.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:30:board with columns [1; 1; 1; 0; 0; 0] and [2; 2; 2; 0; 0; 0] has win move in column 4 is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:30:board with columns [1; 1; 1; 0; 0; 0] and [2; 2; 2; 0; 0; 0] has win move in column 4.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:32:empty board has no win moves.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:32:empty board has no win moves is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:32:empty board has no win moves.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:33:board with two pieces in col 3 and 4 has best next move in col 4.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:33:board with two pieces in col 3 and 4 has best next move in col 4 is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:33:board with two pieces in col 3 and 4 has best next move in col 4.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:36:board with three pieces in col 2 has best next move in col 2.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:36:board with three pieces in col 2 has best next move in col 2 is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:36:board with three pieces in col 2 has best next move in col 2.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:37:board with three pieces in col 7 and other shorter stacks has best next move in col 7.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:37:board with three pieces in col 7 and other shorter stacks has best next move in col 7 is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:37:board with three pieces in col 7 and other shorter stacks has best next move in col 7.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:40:high mid move after Anvil 2, Normal 2, is 2 (testing that doesn't crash after using up all Anvil chips.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:40:high mid move after Anvil 2, Normal 2, is 2 (testing that doesn't crash after using up all Anvil chips is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:40:high mid move after Anvil 2, Normal 2, is 2 (testing that doesn't crash after using up all Anvil chips.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:42:the board of a chip in column 7 and column 1 with the chip in column 7 popped out.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:42:the board of a chip in column 7 and column 1 with the chip in column 7 popped out is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:42:the board of a chip in column 7 and column 1 with the chip in column 7 popped out.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:44:the board of init, add chip 1 six times, 1st list is [1;2;1;2;1;2] with the first 2 popped out.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:44:the board of init, add chip 1 six times, 1st list is [1;2;1;2;1;2] with the first 2 popped out is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:44:the board of init, add chip 1 six times, 1st list is [1;2;1;2;1;2] with the first 2 popped out.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:45:the board of init, add chip to 1, 2, 3, then Bomb to 2 is the empty board but with 2 in col 2.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:45:the board of init, add chip to 1, 2, 3, then Bomb to 2 is the empty board but with 2 in col 2 is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:45:the board of init, add chip to 1, 2, 3, then Bomb to 2 is the empty board but with 2 in col 2.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:48:the board of init, add chip to 1, 2, 3, 1, 2, 3 then Bomb to 1 is the empty board but with 1 1 in col 1, 2 in col 2, 1 2 in col 3.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:48:the board of init, add chip to 1, 2, 3, 1, 2, 3 then Bomb to 1 is the empty board but with 1 1 in col 1, 2 in col 2, 1 2 in col 3 is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:48:the board of init, add chip to 1, 2, 3, 1, 2, 3 then Bomb to 1 is the empty board but with 1 1 in col 1, 2 in col 2, 1 2 in col 3.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:49:the board of init, add chip to 5, 6, 7, then Bomb to 6 is the empty board but with 2 in col 6.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:49:the board of init, add chip to 5, 6, 7, then Bomb to 6 is the empty board but with 2 in col 6 is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:49:the board of init, add chip to 5, 6, 7, then Bomb to 6 is the empty board but with 2 in col 6.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:52:Name of player 1 at init is Bob.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:52:Name of player 1 at init is Bob is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:52:Name of player 1 at init is Bob.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:53:Name of player 2 at init is Joe.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:53:Name of player 2 at init is Joe is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:53:Name of player 2 at init is Joe.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:56:[] creates a three in a row for empty board.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:56:[] creates a three in a row for empty board is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:56:[] creates a three in a row for empty board.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:58:add chip Bomb 4 is a board with pl 1 chip at 4.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:58:add chip Bomb 4 is a board with pl 1 chip at 4 is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:58:add chip Bomb 4 is a board with pl 1 chip at 4.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:59:The three in a row for board of add chip at 1, 1, 2, 2, 1, 3 is [(3, Anvil)].
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:59:The three in a row for board of add chip at 1, 1, 2, 2, 1, 3 is [(3, Anvil)] is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:59:The three in a row for board of add chip at 1, 1, 2, 2, 1, 3 is [(3, Anvil)].
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:62:The three in a row for board of add chip at 1, 1, 2, 2, Anvil 7, 3 is []. (We test that it cannot reccomend a power chip move if no power chips are left)..
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:62:The three in a row for board of add chip at 1, 1, 2, 2, Anvil 7, 3 is []. (We test that it cannot reccomend a power chip move if no power chips are left). is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:62:The three in a row for board of add chip at 1, 1, 2, 2, Anvil 7, 3 is []. (We test that it cannot reccomend a power chip move if no power chips are left)..
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:63:The three in a row for board of add chip at 1 six times is []. (We test that no exception for [Failure ColumnFull] is raised))..
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:63:The three in a row for board of add chip at 1 six times is []. (We test that no exception for [Failure ColumnFull] is raised)). is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:63:The three in a row for board of add chip at 1 six times is []. (We test that no exception for [Failure ColumnFull] is raised))..
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Start test test suite for final:66:pl 1 is cpu after using set_to_cpu 1.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: Test test suite for final:66:pl 1 is cpu after using set_to_cpu 1 is successful.
+2022-05-04T15:37:40+00:00 dhcp-vl2042-20182.redrover.cornell.edu#01 I: End test test suite for final:66:pl 1 is cpu after using set_to_cpu 1.

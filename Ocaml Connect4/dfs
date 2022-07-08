@@ -1,0 +1,240 @@
+[1mdiff --git a/bin/main.ml b/bin/main.ml[m
+[1mindex 5b07c20..1b63df6 100644[m
+[1m--- a/bin/main.ml[m
+[1m+++ b/bin/main.ml[m
+[36m@@ -21,7 +21,7 @@[m [mlet print_result game =[m
+   | NoOutcome -> ()[m
+ [m
+ let rec user_turn game =[m
+[31m-  let cur_pl_id = game |> State.get_current_player in[m
+[32m+[m[32m  let cur_pl_id = game |> State.get_curr_player in[m
+   print_endline[m
+     ((game |> State.get_pl_name cur_pl_id) ^ ", it's your turn\n");[m
+   print_board game;[m
+[1mdiff --git a/src/state.ml b/src/state.ml[m
+[1mindex e6664fc..3640908 100644[m
+[1m--- a/src/state.ml[m
+[1m+++ b/src/state.ml[m
+[36m@@ -178,12 +178,13 @@[m [mlet player_mod num_pl pl_id =[m
+   | 0 -> 1[m
+   | c -> c[m
+ [m
+[31m-(**[get_current_player state] is the player id of the player currently[m
+[32m+[m[32m(**[get_curr_player state] is the player id of the player currently[m
+    playing*)[m
+[31m-let get_current_player state = state.current_pl[m
+[32m+[m[32mlet get_curr_player state = state.current_pl[m
+ [m
+[31m-(***[next_player state] is the Player who goes next in state*)[m
+[31m-let next_player state = state.current_pl |> ( + ) 1 |> player_mod 2[m
+[32m+[m[32m(**[next_player state] is the Player who goes next in state*)[m
+[32m+[m[32mlet next_player state =[m
+[32m+[m[32m  state |> get_curr_player |> ( + ) 1 |> player_mod 2[m
+ [m
+ (**[add_chip_aux pl lst] is lst with the chip for player id [pl] added.[m
+    Raises [Failure "ColumnFull"] if column is already full*)[m
+[36m@@ -206,7 +207,7 @@[m [mlet rec replace_element elem n = function[m
+ let get_chip_count chip st =[m
+   let curr_pl =[m
+     st.player_list[m
+[31m-    |> List.filter (fun x -> x.player_id = st.current_pl)[m
+[32m+[m[32m    |> List.filter (fun x -> x.player_id = get_curr_player st)[m
+     |> List.hd[m
+   in[m
+   match chip with[m
+[36m@@ -235,7 +236,7 @@[m [mlet player_chip_dec curr_pl chip =[m
+ let dec_chip_count chip st =[m
+   let curr_pl =[m
+     st.player_list[m
+[31m-    |> List.filter (fun x -> x.player_id = st.current_pl)[m
+[32m+[m[32m    |> List.filter (fun x -> x.player_id = get_curr_player st)[m
+     |> List.hd[m
+   in[m
+   let new_pl =[m
+[36m@@ -246,12 +247,13 @@[m [mlet dec_chip_count chip st =[m
+   in[m
+   st.player_list[m
+   |> List.map (fun x ->[m
+[31m-         if x.player_id = st.current_pl then new_pl else x)[m
+[32m+[m[32m         if x.player_id = get_curr_player st then new_pl else x)[m
+ [m
+ (**[height lst] is the number of non-zero elements in lst*)[m
+ let height lst = lst |> List.filter (fun x -> x <> 0) |> List.length[m
+ [m
+[31m-(* pops out the element i in the column and returns the new column*)[m
+[32m+[m[32m(** [popout_helper col i] pops out the element i in the column and[m
+[32m+[m[32m    returns the new column*)[m
+ let rec popout_helper (col : int list) (i : int) =[m
+   match i with[m
+   | 5 -> replace_element 0 (i + 1) col[m
+[36m@@ -260,7 +262,8 @@[m [mlet rec popout_helper (col : int list) (i : int) =[m
+         (replace_element (List.nth col (i + 1)) (i + 1) col)[m
+         (i + 1)[m
+ [m
+[31m-(* combines the new column in the int list list*)[m
+[32m+[m[32m(** [popout_cons_columns board new_col new_col_num] combines the new[m
+[32m+[m[32m    column in the int list list*)[m
+ let popout_cons_columns[m
+     (board : int list list)[m
+     (new_col : int list)[m
+[36m@@ -275,69 +278,62 @@[m [mlet popout i j st =[m
+   in[m
+   { st with board = new_board }[m
+ [m
+[32m+[m[32m(**[chip_adder_state chip col select_col st] is [st] with the correct[m
+[32m+[m[32m   pre-adding chip adjustments based on [chip], [col], [select_col][m
+[32m+[m[32m   (mainly popping out chips). Raises [Failure "NotEnoughChips"] if[m
+[32m+[m[32m   current player in [st] has zero chips of type [chip].*)[m
+[32m+[m[32mlet chip_pre_state chip col select_col st =[m
+[32m+[m[32m  if get_chip_count chip st = 0 then failwith "NotEnoughChips"[m
+[32m+[m[32m  else if chip = Anvil then[m
+[32m+[m[32m    st |> apply_n (popout 1 col) (height select_col)[m
+[32m+[m[32m  else if chip = Bomb then[m
+[32m+[m[32m    let bomb_height = height select_col in[m
+[32m+[m[32m    if bomb_height = 0 then st[m
+[32m+[m[32m    else[m
+[32m+[m[32m      let blowup_left =[m
+[32m+[m[32m        match List.nth st.board (col - 2) with[m
+[32m+[m[32m        | lst -> popout bomb_height (col - 1) st[m
+[32m+[m[32m        | exception _ -> st[m
+[32m+[m[32m      in[m
+[32m+[m[32m      let blowup_right =[m
+[32m+[m[32m        match List.nth st.board col with[m
+[32m+[m[32m        | lst -> popout bomb_height (col + 1) blowup_left[m
+[32m+[m[32m        | exception _ -> blowup_left[m
+[32m+[m[32m      in[m
+[32m+[m[32m      popout bomb_height col blowup_right[m
+[32m+[m[32m  else st[m
+[32m+[m
+[32m+[m[32m(**[chip_adder col chip st] adds chip of type [chip] to [st] once it has[m
+[32m+[m[32m   been prepared with pre-adding by [chip_adder_state]*)[m
+[32m+[m[32mlet chip_adder col chip st =[m
+[32m+[m[32m  let new_col =[m
+[32m+[m[32m    add_chip_aux (get_curr_player st)[m
+[32m+[m[32m      (List.nth (get_board st) (col - 1))[m
+[32m+[m[32m  in[m
+[32m+[m[32m  let new_pl_list = dec_chip_count chip st in[m
+[32m+[m[32m  let new_board = replace_element new_col col (get_board st) in[m
+[32m+[m[32m  {[m
+[32m+[m[32m    board = new_board;[m
+[32m+[m[32m    current_pl = next_player st;[m
+[32m+[m[32m    player_list = new_pl_list;[m
+[32m+[m[32m  }[m
+[32m+[m
+ let rec add_chip chip col state =[m
+   let select_col =[m
+     match List.nth state.board (col - 1) with[m
+     | a -> a[m
+     | exception _ -> failwith "InvalidColumn"[m
+   in[m
+[31m-  let new_player = next_player state in[m
+[31m-  let _ = add_chip_aux state.current_pl select_col in[m
+[32m+[m[32m  (*checks that column not already full*)[m
+[32m+[m[32m  let _ = add_chip_aux (get_curr_player state) select_col in[m
+   match chip with[m
+[31m-  | Normal ->[m
+[31m-      let new_col = add_chip_aux state.current_pl select_col in[m
+[31m-      let new_board = replace_element new_col col state.board in[m
+[31m-      { state with board = new_board; current_pl = new_player }[m
+[32m+[m[32m  | Normal -> chip_adder col Normal state[m
+   | Anvil ->[m
+[31m-      if get_chip_count Anvil state = 0 then failwith "NotEnoughChips"[m
+[31m-      else[m
+[31m-        let popout_state =[m
+[31m-          state |> apply_n (popout 1 col) (height select_col)[m
+[31m-        in[m
+[31m-        let new_col =[m
+[31m-          add_chip_aux popout_state.current_pl[m
+[31m-            (List.nth popout_state.board (col - 1))[m
+[31m-        in[m
+[31m-        let new_board =[m
+[31m-          replace_element new_col col popout_state.board[m
+[31m-        in[m
+[31m-        let new_pl_list = dec_chip_count Anvil state in[m
+[31m-        {[m
+[31m-          board = new_board;[m
+[31m-          current_pl = new_player;[m
+[31m-          player_list = new_pl_list;[m
+[31m-        }[m
+[32m+[m[32m      let anvil_pre_state = chip_pre_state Anvil col select_col state in[m
+[32m+[m[32m      chip_adder col Anvil anvil_pre_state[m
+   | Bomb ->[m
+[31m-      if get_chip_count Bomb state = 0 then failwith "NotEnoughChips"[m
+[31m-      else[m
+[31m-        let bomb_height = height select_col in[m
+[31m-        let blown_up =[m
+[31m-          if bomb_height = 0 then state[m
+[31m-          else[m
+[31m-            let blowup_left =[m
+[31m-              match List.nth state.board (col - 2) with[m
+[31m-              | lst -> popout bomb_height (col - 1) state[m
+[31m-              | exception _ -> state[m
+[31m-            in[m
+[31m-            let blowup_right =[m
+[31m-              match List.nth state.board col with[m
+[31m-              | lst -> popout bomb_height (col + 1) blowup_left[m
+[31m-              | exception _ -> blowup_left[m
+[31m-            in[m
+[31m-            popout bomb_height col blowup_right[m
+[31m-        in[m
+[31m-[m
+[31m-        let new_col =[m
+[31m-          add_chip_aux state.current_pl[m
+[31m-            (List.nth blown_up.board (col - 1))[m
+[31m-        in[m
+[31m-        let new_board = replace_element new_col col blown_up.board in[m
+[31m-        let new_pl_list = dec_chip_count Bomb state in[m
+[31m-        {[m
+[31m-          board = new_board;[m
+[31m-          current_pl = new_player;[m
+[31m-          player_list = new_pl_list;[m
+[31m-        }[m
+[32m+[m[32m      let bomb_pre_state = chip_pre_state Bomb col select_col state in[m
+[32m+[m[32m      chip_adder col Bomb bomb_pre_state[m
+ [m
+ let check_win_future (st : t) (chip : chip) (col : int) =[m
+   if check_win all_eq (get_board (add_chip chip col st)) = 0 then false[m
+[36m@@ -353,7 +349,7 @@[m [mlet rec check_cols (st : t) (chip : chip) (col : int) :[m
+ let win_moves st =[m
+   check_cols st Normal 1 @ check_cols st Anvil 1 @ check_cols st Bomb 1[m
+ [m
+[31m-(**[lst_eq lst] is true if all elements of lst are equal*)[m
+[32m+[m[32m(**[lst_eq lst] is true if all elements of lst are equal.*)[m
+ let rec lst_eq = function[m
+   | [] | [ _ ] -> true[m
+   | a :: (b :: t as tt) -> if a = b then lst_eq tt else false[m
+[36m@@ -384,7 +380,7 @@[m [mlet moves =[m
+   norm @ anvil @ bomb[m
+ [m
+ let three_moves st =[m
+[31m-  let cur_pl = st |> get_current_player in[m
+[32m+[m[32m  let cur_pl = st |> get_curr_player in[m
+   moves[m
+   |> List.filter (fun (col, chip) ->[m
+          match[m
+[36m@@ -451,7 +447,7 @@[m [mlet cpu_move st =[m
+     else (high_mid_move st, Normal)[m
+ [m
+ let is_cpu st =[m
+[31m-  let curr_pl = get_current_player st in[m
+[32m+[m[32m  let curr_pl = get_curr_player st in[m
+   st.player_list |> List.find (fun x -> x.player_id = curr_pl)[m
+   |> fun x -> x.is_cpu[m
+ [m
+[1mdiff --git a/src/state.mli b/src/state.mli[m
+[1mindex fa076fa..941b094 100644[m
+[1m--- a/src/state.mli[m
+[1m+++ b/src/state.mli[m
+[36m@@ -44,9 +44,9 @@[m [mval get_board : t -> int list list[m
+    the last int list is the right most column. 0 is no chips, 1 is[m
+    player 1's chip, etc*)[m
+ [m
+[31m-val get_current_player : t -> int[m
+[31m-(**[get_current_player t] is the id of the player who is currently[m
+[31m-   playing at the moment*)[m
+[32m+[m[32mval get_curr_player : t -> int[m
+[32m+[m[32m(**[get_curr_player t] is the id of the player who is currently playing[m
+[32m+[m[32m   at the moment*)[m
+ [m
+ val popout : int -> int -> t -> t[m
+ (**[popout i j st] is [st] with the [i] row [j] column chip popped out.[m

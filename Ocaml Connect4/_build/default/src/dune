@@ -1,0 +1,4 @@
+(library
+ (name con4)
+ (public_name Con4)
+ (libraries ANSITerminal))

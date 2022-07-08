@@ -1,0 +1,3 @@
+(executable
+ (name test)
+ (libraries Con4game ounit2))
